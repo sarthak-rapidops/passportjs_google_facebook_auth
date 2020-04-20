@@ -96,7 +96,7 @@ router.get('/logout', (req, res)=> {
 
 // generating GOOGLE login URL
 const stringifiedParams = querystring.stringify({
-  client_id: "726554708135-avbvco9lidlckjjpo2td18fg498abc26.apps.googleusercontent.com",
+  client_id: "<your client id>",
   redirect_uri: 'http://localhost:5000/users/google',
   scope: [
   'https://www.googleapis.com/auth/userinfo.email',
@@ -116,7 +116,7 @@ const stringifiedParams = querystring.stringify({
 
   // generating FACEBOOK login url
   const stringifiedParamsFB = querystring.stringify({
-    client_id: "1626604210848396",
+    client_id: "<your client id>",
     redirect_uri: 'http://localhost:5000/users/facebook/',
     scope: ['email', 'user_friends'].join(','), // comma seperated string
     response_type: 'code',
