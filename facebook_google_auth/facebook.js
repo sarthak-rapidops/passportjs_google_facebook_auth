@@ -6,8 +6,8 @@ module.exports=async function getAccessTokenFromCodef(code) {
       url: 'https://graph.facebook.com/v4.0/oauth/access_token',
       method: 'get',
       params: {
-        client_id: "1626604210848396",
-        client_secret: "49af4c22cd9e1335119c9d5e38b8245a",
+        client_id: "<your client id>",
+        client_secret: "<your secret key>",
         redirect_uri: 'http://localhost:5000/users/facebook/',
         code,
       },
