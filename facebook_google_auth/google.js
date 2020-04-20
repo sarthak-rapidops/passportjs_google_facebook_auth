@@ -6,8 +6,8 @@ module.exports=async function getAccessTokenFromCode(code) {
       url: `https://oauth2.googleapis.com/token`,
       method: 'post',
       data: {
-        client_id: " 726554708135-avbvco9lidlckjjpo2td18fg498abc26.apps.googleusercontent.com",
-        client_secret: "maMdgSGk7Cyp59X1574SfmHX",
+        client_id: " <your client id>",
+        client_secret: "<your secret id>",
         redirect_uri: 'http://localhost:5000/users/google',
         grant_type: 'authorization_code',
         code,
